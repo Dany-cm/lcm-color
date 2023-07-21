@@ -1,0 +1,40 @@
+.background-image {
+  background-image: url("../../assets/background-header.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 50vh;
+}
+
+.navbar {
+  border-radius: 40px;
+  background-color: #8e75ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .nav-link.active {
+  color: white;
+}
+.navbar .nav-link {
+  color: #ced4da;
+}
+
+.navbar .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.158);
+  border-radius: 5px;
+  color: white;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+
+.svg-logo {
+  width: 50px;
+  height: auto;
+  transform: scaleX(-1);
+}
