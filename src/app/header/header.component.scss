@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 50vh;
+  height: 80vh;
 }
 
 .navbar {
@@ -37,4 +37,13 @@
   width: 50px;
   height: auto;
   transform: scaleX(-1);
+}
+
+.lcm-banner {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  z-index: 1;
 }
