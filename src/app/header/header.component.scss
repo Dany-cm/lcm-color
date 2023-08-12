@@ -1,49 +1,56 @@
+// Variables
+$background-color: #8e75ff;
+$navbar-radius: 40px;
+$navbar-z-index: 1;
+
+// Styles
 .background-image {
   background-image: url("../../assets/background-header.webp");
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 80vh;
+  height: 50vh;
 }
 
 .navbar {
-  border-radius: 40px;
-  background-color: #8e75ff;
+  border-radius: $navbar-radius;
+  background-color: $background-color;
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: 1;
-}
+  max-width: 50%;
+  z-index: $navbar-z-index;
 
-.navbar .nav-link.active {
-  color: white;
-}
-.navbar .nav-link {
-  color: #ced4da;
-}
+  @media screen and (max-width: 425px) {
+    max-width: 100%;
+  }
+  .nav-link {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #ced4da;
 
-.navbar .nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.158);
-  border-radius: 5px;
-  color: white;
-}
+    &.active {
+      color: white;
+    }
 
-#navbarNav {
-  justify-content: center;
-}
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.158);
+      border-radius: 5px;
+      color: white;
+    }
+  }
 
-.svg-logo {
-  width: 50px;
-  height: auto;
-  transform: scaleX(-1);
+  .svg-logo {
+    width: 40px;
+    height: auto;
+    transform: scaleX(-1);
+  }
 }
 
 .lcm-banner {
   position: absolute;
-  top: 80%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%;
-  z-index: 1;
+  z-index: $navbar-z-index;
 }
